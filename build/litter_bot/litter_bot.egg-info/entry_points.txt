@@ -1,0 +1,4 @@
+[console_scripts]
+coordinator_node = litter_bot.coordinator_node:main
+goal_sender = litter_bot.goal_sender:main
+

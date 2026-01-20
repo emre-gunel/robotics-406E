@@ -1,0 +1,30 @@
+[0.903s] Invoking command in '/home/hydria/ws/build/litter_bot_manipulation': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data
+[1.054s] running develop
+[1.143s] running egg_info
+[1.143s] creating litter_bot_manipulation.egg-info
+[1.144s] writing litter_bot_manipulation.egg-info/PKG-INFO
+[1.144s] writing dependency_links to litter_bot_manipulation.egg-info/dependency_links.txt
+[1.144s] writing entry points to litter_bot_manipulation.egg-info/entry_points.txt
+[1.144s] writing requirements to litter_bot_manipulation.egg-info/requires.txt
+[1.145s] writing top-level names to litter_bot_manipulation.egg-info/top_level.txt
+[1.145s] writing manifest file 'litter_bot_manipulation.egg-info/SOURCES.txt'
+[1.145s] reading manifest file 'litter_bot_manipulation.egg-info/SOURCES.txt'
+[1.146s] writing manifest file 'litter_bot_manipulation.egg-info/SOURCES.txt'
+[1.146s] running build_ext
+[1.146s] Creating /home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages/litter-bot-manipulation.egg-link (link to .)
+[1.147s] Installing gripper_controller script to /home/hydria/ws/install/litter_bot_manipulation/lib/litter_bot_manipulation
+[1.147s] Installing manipulation_node script to /home/hydria/ws/install/litter_bot_manipulation/lib/litter_bot_manipulation
+[1.147s] 
+[1.147s] Installed /home/hydria/ws/build/litter_bot_manipulation
+[1.147s] running symlink_data
+[1.147s] creating /home/hydria/ws/install/litter_bot_manipulation/share/ament_index
+[1.147s] creating /home/hydria/ws/install/litter_bot_manipulation/share/ament_index/resource_index
+[1.147s] creating /home/hydria/ws/install/litter_bot_manipulation/share/ament_index/resource_index/packages
+[1.147s] symbolically linking /home/hydria/ws/build/litter_bot_manipulation/resource/litter_bot_manipulation -> /home/hydria/ws/install/litter_bot_manipulation/share/ament_index/resource_index/packages
+[1.147s] symbolically linking /home/hydria/ws/build/litter_bot_manipulation/package.xml -> /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation
+[1.148s] creating /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/launch
+[1.148s] symbolically linking /home/hydria/ws/build/litter_bot_manipulation/launch/manipulation.launch.py -> /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/launch
+[1.148s] creating /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/config
+[1.148s] symbolically linking /home/hydria/ws/build/litter_bot_manipulation/config/moveit_config.yaml -> /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/config
+[1.148s] symbolically linking /home/hydria/ws/build/litter_bot_manipulation/config/arm_controller.yaml -> /home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/config
+[1.167s] Invoked command in '/home/hydria/ws/build/litter_bot_manipulation' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data

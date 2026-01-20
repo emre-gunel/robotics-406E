@@ -1,0 +1,1 @@
+/home/hydria/ws/src/litter_bot_navigation/maps/generate_map.py

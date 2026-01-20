@@ -1,0 +1,4 @@
+[console_scripts]
+gripper_controller = litter_bot_manipulation.gripper_controller:main
+manipulation_node = litter_bot_manipulation.manipulation_node:main
+

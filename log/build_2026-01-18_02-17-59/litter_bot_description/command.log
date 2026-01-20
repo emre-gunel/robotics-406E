@@ -1,0 +1,6 @@
+Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hydria/ws/src/litter_bot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_description
+Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hydria/ws/src/litter_bot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_description
+Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_description -- -j6 -l6
+Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_description -- -j6 -l6
+Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_description
+Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_description

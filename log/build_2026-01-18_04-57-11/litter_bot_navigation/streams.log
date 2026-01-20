@@ -1,0 +1,19 @@
+[0.614s] Invoking command in '/home/hydria/ws/build/litter_bot_navigation': PYTHONPATH=/home/hydria/ws/build/litter_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_navigation/build --no-deps symlink_data
+[0.851s] running develop
+[1.003s] running egg_info
+[1.004s] writing litter_bot_navigation.egg-info/PKG-INFO
+[1.004s] writing dependency_links to litter_bot_navigation.egg-info/dependency_links.txt
+[1.004s] writing entry points to litter_bot_navigation.egg-info/entry_points.txt
+[1.004s] writing requirements to litter_bot_navigation.egg-info/requires.txt
+[1.004s] writing top-level names to litter_bot_navigation.egg-info/top_level.txt
+[1.005s] reading manifest file 'litter_bot_navigation.egg-info/SOURCES.txt'
+[1.006s] writing manifest file 'litter_bot_navigation.egg-info/SOURCES.txt'
+[1.007s] running build_ext
+[1.008s] Creating /home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages/litter-bot-navigation.egg-link (link to .)
+[1.008s] Installing coverage_planner_node script to /home/hydria/ws/install/litter_bot_navigation/lib/litter_bot_navigation
+[1.009s] 
+[1.009s] Installed /home/hydria/ws/build/litter_bot_navigation
+[1.009s] running symlink_data
+[1.009s] symbolically linking /home/hydria/ws/build/litter_bot_navigation/maps/generate_map.py -> /home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/maps
+[1.009s] symbolically linking /home/hydria/ws/build/litter_bot_navigation/maps/med_cim_map.pgm -> /home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/maps
+[1.040s] Invoked command in '/home/hydria/ws/build/litter_bot_navigation' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_navigation/build --no-deps symlink_data

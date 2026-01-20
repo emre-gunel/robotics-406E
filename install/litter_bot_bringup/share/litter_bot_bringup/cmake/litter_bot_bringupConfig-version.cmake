@@ -1,0 +1,1 @@
+/home/hydria/ws/build/litter_bot_bringup/ament_cmake_core/litter_bot_bringupConfig-version.cmake

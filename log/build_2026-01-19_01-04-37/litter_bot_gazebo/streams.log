@@ -1,0 +1,24 @@
+[0.200s] Invoking command in '/home/hydria/ws/build/litter_bot_gazebo': CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot_bringup:/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot:/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_gazebo -- -j6 -l6
+[0.220s] Invoked command in '/home/hydria/ws/build/litter_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot_bringup:/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot:/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_gazebo -- -j6 -l6
+[0.228s] Invoking command in '/home/hydria/ws/build/litter_bot_gazebo': CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot_bringup:/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot:/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_gazebo
+[0.232s] -- Install configuration: ""
+[0.233s] -- Execute custom install script
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim.world
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim_mapping.world
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/launch/simulation.launch.py
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/litter_bot_gazebo
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/litter_bot_gazebo
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.sh
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.dsv
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.sh
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.dsv
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.bash
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.sh
+[0.235s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.zsh
+[0.236s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.dsv
+[0.236s] -- Symlinking: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.dsv
+[0.242s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/packages/litter_bot_gazebo
+[0.242s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig.cmake
+[0.243s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig-version.cmake
+[0.243s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.xml
+[0.244s] Invoked command in '/home/hydria/ws/build/litter_bot_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot_bringup:/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot:/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_gazebo

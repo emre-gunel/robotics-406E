@@ -1,0 +1,24 @@
+[0.059s] Invoking command in '/home/hydria/ws/build/litter_bot_gazebo': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_gazebo -- -j6 -l6
+[0.096s] Invoked command in '/home/hydria/ws/build/litter_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_gazebo -- -j6 -l6
+[0.109s] Invoking command in '/home/hydria/ws/build/litter_bot_gazebo': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_gazebo
+[0.116s] -- Install configuration: ""
+[0.116s] -- Execute custom install script
+[0.117s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim.world
+[0.117s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim_mapping.world
+[0.118s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/launch/simulation.launch.py
+[0.118s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/litter_bot_gazebo
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/litter_bot_gazebo
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.sh
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.dsv
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.sh
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.dsv
+[0.119s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.bash
+[0.120s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.sh
+[0.120s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.zsh
+[0.120s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.dsv
+[0.120s] -- Symlinking: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.dsv
+[0.128s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/packages/litter_bot_gazebo
+[0.128s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig.cmake
+[0.128s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig-version.cmake
+[0.128s] -- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.xml
+[0.130s] Invoked command in '/home/hydria/ws/build/litter_bot_gazebo' returned '0': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_description:/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_gazebo

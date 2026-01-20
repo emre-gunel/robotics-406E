@@ -1,0 +1,9 @@
+source;share/litter_bot_perception/hook/pythonpath.ps1
+source;share/litter_bot_perception/hook/pythonpath.dsv
+source;share/litter_bot_perception/hook/pythonpath.sh
+source;share/litter_bot_perception/hook/ament_prefix_path.ps1
+source;share/litter_bot_perception/hook/ament_prefix_path.dsv
+source;share/litter_bot_perception/hook/ament_prefix_path.sh
+source;../../build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.ps1
+source;../../build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.dsv
+source;../../build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.sh

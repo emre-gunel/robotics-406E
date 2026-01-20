@@ -1,0 +1,3 @@
+[console_scripts]
+coverage_planner_node = litter_bot_navigation.coverage_planner_node:main
+

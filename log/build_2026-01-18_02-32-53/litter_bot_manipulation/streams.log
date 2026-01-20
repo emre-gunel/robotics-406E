@@ -1,0 +1,18 @@
+[0.861s] Invoking command in '/home/hydria/ws/build/litter_bot_manipulation': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data
+[1.007s] running develop
+[1.122s] running egg_info
+[1.122s] writing litter_bot_manipulation.egg-info/PKG-INFO
+[1.122s] writing dependency_links to litter_bot_manipulation.egg-info/dependency_links.txt
+[1.122s] writing entry points to litter_bot_manipulation.egg-info/entry_points.txt
+[1.122s] writing requirements to litter_bot_manipulation.egg-info/requires.txt
+[1.123s] writing top-level names to litter_bot_manipulation.egg-info/top_level.txt
+[1.124s] reading manifest file 'litter_bot_manipulation.egg-info/SOURCES.txt'
+[1.124s] writing manifest file 'litter_bot_manipulation.egg-info/SOURCES.txt'
+[1.126s] running build_ext
+[1.126s] Creating /home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages/litter-bot-manipulation.egg-link (link to .)
+[1.127s] Installing gripper_controller script to /home/hydria/ws/install/litter_bot_manipulation/lib/litter_bot_manipulation
+[1.127s] Installing manipulation_node script to /home/hydria/ws/install/litter_bot_manipulation/lib/litter_bot_manipulation
+[1.127s] 
+[1.127s] Installed /home/hydria/ws/build/litter_bot_manipulation
+[1.127s] running symlink_data
+[1.153s] Invoked command in '/home/hydria/ws/build/litter_bot_manipulation' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data

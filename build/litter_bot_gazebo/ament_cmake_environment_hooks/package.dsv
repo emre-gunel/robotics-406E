@@ -1,0 +1,4 @@
+source;share/litter_bot_gazebo/local_setup.bash
+source;share/litter_bot_gazebo/local_setup.dsv
+source;share/litter_bot_gazebo/local_setup.sh
+source;share/litter_bot_gazebo/local_setup.zsh

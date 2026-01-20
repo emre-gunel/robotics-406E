@@ -1,0 +1,1 @@
+/home/hydria/ws/build/litter_bot_manipulation/launch/manipulation.launch.py

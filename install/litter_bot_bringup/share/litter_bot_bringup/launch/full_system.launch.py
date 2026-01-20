@@ -1,0 +1,1 @@
+/home/hydria/ws/src/litter_bot_bringup/launch/full_system.launch.py

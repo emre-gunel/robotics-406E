@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+litter_bot/__init__.py
+litter_bot/coordinator_node.py
+litter_bot/goal_sender.py
+litter_bot.egg-info/PKG-INFO
+litter_bot.egg-info/SOURCES.txt
+litter_bot.egg-info/dependency_links.txt
+litter_bot.egg-info/entry_points.txt
+litter_bot.egg-info/requires.txt
+litter_bot.egg-info/top_level.txt
+litter_bot.egg-info/zip-safe
+resource/litter_bot

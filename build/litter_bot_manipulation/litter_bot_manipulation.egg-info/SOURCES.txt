@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+config/arm_controller.yaml
+config/moveit_config.yaml
+launch/manipulation.launch.py
+litter_bot_manipulation/__init__.py
+litter_bot_manipulation/gripper_controller.py
+litter_bot_manipulation/manipulation_node.py
+litter_bot_manipulation.egg-info/PKG-INFO
+litter_bot_manipulation.egg-info/SOURCES.txt
+litter_bot_manipulation.egg-info/dependency_links.txt
+litter_bot_manipulation.egg-info/entry_points.txt
+litter_bot_manipulation.egg-info/requires.txt
+litter_bot_manipulation.egg-info/top_level.txt
+litter_bot_manipulation.egg-info/zip-safe
+resource/litter_bot_manipulation

@@ -1,0 +1,752 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="med_cim">
+    <!-- Physics - slower for WSL2 stability -->
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>0.5</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Lighting -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane with grass texture -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 10</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 10</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.2 0.5 0.2 1</ambient>
+            <diffuse>0.3 0.6 0.3 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Boundary walls -->
+    <model name="wall_north">
+      <static>true</static>
+      <pose>0 5.1 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>0 -5.1 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>10.1 0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-10.1 0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Litter objects: Cigarette butts -->
+    <model name="cigarette_1">
+      <static>true</static>
+      <pose>2.5 1.2 0.005 0 1.57 0.3</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.85 0.7 1</ambient>
+            <diffuse>0.95 0.9 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="cigarette_2">
+      <static>true</static>
+      <pose>-3.0 2.5 0.005 0 1.57 1.2</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.85 0.7 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="cigarette_3">
+      <static>true</static>
+      <pose>5.0 -1.5 0.005 0 1.57 2.1</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.004</radius><length>0.03</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.85 0.7 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Litter objects: Paper pieces -->
+    <model name="paper_1">
+      <static>true</static>
+      <pose>1.0 3.0 0.002 0 0 0.5</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.08 0.06 0.002</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.08 0.06 0.002</size></box>
+          </geometry>
+          <material>
+            <ambient>0.95 0.95 0.95 1</ambient>
+            <diffuse>1.0 1.0 1.0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="paper_2">
+      <static>true</static>
+      <pose>-4.5 -2.0 0.002 0 0 1.8</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.1 0.07 0.002</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.1 0.07 0.002</size></box>
+          </geometry>
+          <material>
+            <ambient>0.95 0.95 0.9 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="paper_3">
+      <static>true</static>
+      <pose>6.0 2.0 0.002 0 0.1 2.5</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.06 0.05 0.002</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.06 0.05 0.002</size></box>
+          </geometry>
+          <material>
+            <ambient>0.9 0.9 0.85 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Litter objects: Bottle caps -->
+    <model name="bottle_cap_1">
+      <static>true</static>
+      <pose>-1.5 0.5 0.008 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.8 0.1 0.1 1</ambient>
+            <diffuse>1.0 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="bottle_cap_2">
+      <static>true</static>
+      <pose>3.5 -3.0 0.008 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.1 0.1 0.8 1</ambient>
+            <diffuse>0.2 0.2 1.0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="bottle_cap_3">
+      <static>true</static>
+      <pose>-6.0 3.5 0.008 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.015</radius><length>0.008</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.1 0.6 0.1 1</ambient>
+            <diffuse>0.2 0.8 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Static human obstacles -->
+    <model name="human_1">
+      <static>true</static>
+      <pose>4.0 0 0.9 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.3</radius><length>1.8</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.3</radius><length>1.8</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.3 1</ambient>
+            <diffuse>0.7 0.5 0.4 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="human_2">
+      <static>true</static>
+      <pose>-2.0 -3.0 0.9 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.3</radius><length>1.8</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.3</radius><length>1.8</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.4 0.6 1</ambient>
+            <diffuse>0.5 0.5 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Bench -->
+    <model name="bench_1">
+      <static>true</static>
+      <pose>7.0 0 0.25 0 0 1.57</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.5 0.3 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Trees -->
+    <model name="tree_1">
+      <static>true</static>
+      <pose>-8.0 4.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.15</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.15</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.35 0.2 0.1 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.0</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.1 1</ambient>
+            <diffuse>0.2 0.5 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_2">
+      <static>true</static>
+      <pose>-5.0 -3.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.18</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.18</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.35 0.2 0.1 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.2</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.45 0.1 1</ambient>
+            <diffuse>0.2 0.55 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_3">
+      <static>true</static>
+      <pose>3.0 3.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.12</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.12</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.3 0.18 0.08 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.3 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>0.9</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.15 0.5 0.15 1</ambient>
+            <diffuse>0.25 0.6 0.25 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_4">
+      <static>true</static>
+      <pose>8.0 -3.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.22 0.12 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.6 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.3</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.08 0.38 0.08 1</ambient>
+            <diffuse>0.18 0.48 0.18 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_5">
+      <static>true</static>
+      <pose>-2.0 2.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.14</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.14</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.32 0.19 0.09 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.4 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.0</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.12 0.42 0.12 1</ambient>
+            <diffuse>0.22 0.52 0.22 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_6">
+      <static>true</static>
+      <pose>5.5 1.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.16</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.16</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.38 0.21 0.11 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.1</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.1 1</ambient>
+            <diffuse>0.2 0.5 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Second bench -->
+    <model name="bench_2">
+      <static>true</static>
+      <pose>-6.0 -1.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.5 0.3 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ========== LITTER OBJECTS ========== -->
+    
+    <!-- Red Bottle Cap 1 -->
+    <model name="bottle_cap_1">
+      <static>true</static>
+      <pose>2.0 -0.5 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.8 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Red Bottle Cap 2 -->
+    <model name="bottle_cap_2">
+      <static>true</static>
+      <pose>3.5 0.5 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.1 0.0 1</ambient>
+            <diffuse>1.0 0.1 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Red Bottle Cap 3 -->
+    <model name="bottle_cap_3">
+      <static>true</static>
+      <pose>1.0 -1.5 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.02</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.7 0.0 0.0 1</ambient>
+            <diffuse>0.9 0.0 0.0 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.02</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Red Litter 4 (was cigarette) -->
+    <model name="litter_4">
+      <static>true</static>
+      <pose>2.5 1.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.03</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.03</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Red Litter 5 -->
+    <model name="litter_5">
+      <static>true</static>
+      <pose>4.0 -1.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.03</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.85 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.1 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.03</radius><length>0.03</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Red Litter 6 -->
+    <model name="litter_6">
+      <static>true</static>
+      <pose>0.5 0.5 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.025</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.95 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.6 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.025</radius><length>0.025</length></cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Large Red Object (easier to see) -->
+    <!-- red_can removed - all litter is now bottle cap sized -->
+
+  </world>
+</sdf>
+

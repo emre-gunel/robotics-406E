@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim.world
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/worlds/med_cim_mapping.world
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/launch/simulation.launch.py
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/package_run_dependencies/litter_bot_gazebo
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/parent_prefix_path/litter_bot_gazebo
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.sh
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/environment/path.dsv
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.bash
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.sh
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.zsh
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/local_setup.dsv
+-- Symlinking: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.dsv
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/ament_index/resource_index/packages/litter_bot_gazebo
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig.cmake
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/cmake/litter_bot_gazeboConfig-version.cmake
+-- Up-to-date symlink: /home/hydria/ws/install/litter_bot_gazebo/share/litter_bot_gazebo/package.xml

@@ -1,0 +1,380 @@
+[0.122s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'litter_bot', 'litter_bot_navigation', 'litter_bot_perception', 'litter_bot_manipulation', 'litter_bot_bringup']
+[0.122s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['litter_bot', 'litter_bot_navigation', 'litter_bot_perception', 'litter_bot_manipulation', 'litter_bot_bringup'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f053ff2c4f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f053ff2c130>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f053ff2c130>>)
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hydria/ws'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot) by extension 'ros'
+[0.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot' with type 'ros.ament_python' and name 'litter_bot'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_bringup) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_bringup' with type 'ros.ament_cmake' and name 'litter_bot_bringup'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_description) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_description' with type 'ros.ament_cmake' and name 'litter_bot_description'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_gazebo) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_gazebo' with type 'ros.ament_cmake' and name 'litter_bot_gazebo'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_manipulation) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_manipulation' with type 'ros.ament_python' and name 'litter_bot_manipulation'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_navigation) by extension 'ros'
+[0.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_navigation' with type 'ros.ament_python' and name 'litter_bot_navigation'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/litter_bot_perception) by extension 'ros'
+[0.231s] DEBUG:colcon.colcon_core.package_identification:Package 'src/litter_bot_perception' with type 'ros.ament_python' and name 'litter_bot_perception'
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.249s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'litter_bot_description' in 'src/litter_bot_description'
+[0.249s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'litter_bot_gazebo' in 'src/litter_bot_gazebo'
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.250s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 439 installed packages in /opt/ros/humble
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'litter_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'litter_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hydria/ws/build/litter_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hydria/ws/install/litter_bot', 'merge_install': False, 'path': '/home/hydria/ws/src/litter_bot', 'symlink_install': True, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_manipulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'litter_bot_manipulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hydria/ws/build/litter_bot_manipulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hydria/ws/install/litter_bot_manipulation', 'merge_install': False, 'path': '/home/hydria/ws/src/litter_bot_manipulation', 'symlink_install': True, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'litter_bot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hydria/ws/build/litter_bot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hydria/ws/install/litter_bot_navigation', 'merge_install': False, 'path': '/home/hydria/ws/src/litter_bot_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'litter_bot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hydria/ws/build/litter_bot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hydria/ws/install/litter_bot_perception', 'merge_install': False, 'path': '/home/hydria/ws/src/litter_bot_perception', 'symlink_install': True, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'litter_bot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'litter_bot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hydria/ws/build/litter_bot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hydria/ws/install/litter_bot_bringup', 'merge_install': False, 'path': '/home/hydria/ws/src/litter_bot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.280s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.281s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hydria/ws/src/litter_bot' with build type 'ament_python'
+[0.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot', 'ament_prefix_path')
+[0.282s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/ament_prefix_path.ps1'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/ament_prefix_path.dsv'
+[0.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/ament_prefix_path.sh'
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.285s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hydria/ws/src/litter_bot_manipulation' with build type 'ament_python'
+[0.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_manipulation', 'ament_prefix_path')
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/ament_prefix_path.ps1'
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/ament_prefix_path.dsv'
+[0.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/ament_prefix_path.sh'
+[0.286s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.288s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hydria/ws/src/litter_bot_navigation' with build type 'ament_python'
+[0.288s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_navigation', 'ament_prefix_path')
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/ament_prefix_path.ps1'
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/ament_prefix_path.dsv'
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/ament_prefix_path.sh'
+[0.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.291s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/hydria/ws/src/litter_bot_perception' with build type 'ament_python'
+[0.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_perception', 'ament_prefix_path')
+[0.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/ament_prefix_path.ps1'
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/ament_prefix_path.dsv'
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/ament_prefix_path.sh'
+[0.292s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.292s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hydria/ws/src/litter_bot'
+[0.436s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.436s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.574s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hydria/ws/src/litter_bot_manipulation'
+[0.574s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.574s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.718s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hydria/ws/src/litter_bot_navigation'
+[0.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.718s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.854s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/hydria/ws/src/litter_bot_perception'
+[0.855s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.855s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_navigation': PYTHONPATH=/home/hydria/ws/build/litter_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_navigation/build --no-deps symlink_data
+[1.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot': PYTHONPATH=/home/hydria/ws/build/litter_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot/build --no-deps symlink_data
+[1.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_perception': PYTHONPATH=/home/hydria/ws/build/litter_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_perception/build --no-deps symlink_data
+[1.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_manipulation': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data
+[1.452s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_manipulation', 'pythonpath_develop')
+[1.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath_develop.ps1'
+[1.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_manipulation' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_manipulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_manipulation/build --no-deps symlink_data
+[1.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/build/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath_develop.dsv'
+[1.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath_develop.sh'
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation' for CMake module files
+[1.455s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation' for CMake config files
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation/lib'
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation/bin'
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation/lib/pkgconfig/litter_bot_manipulation.pc'
+[1.456s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages'
+[1.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_manipulation', 'pythonpath')
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath.ps1'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath.dsv'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/hook/pythonpath.sh'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_manipulation/bin'
+[1.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot_manipulation)
+[1.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/package.ps1'
+[1.458s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/package.dsv'
+[1.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/package.sh'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/package.bash'
+[1.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_manipulation/share/litter_bot_manipulation/package.zsh'
+[1.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot_manipulation/share/colcon-core/packages/litter_bot_manipulation)
+[1.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_perception', 'pythonpath_develop')
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.ps1'
+[1.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_perception' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_perception/build --no-deps symlink_data
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.dsv'
+[1.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_perception/share/litter_bot_perception/hook/pythonpath_develop.sh'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception' for CMake module files
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception' for CMake config files
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception/lib'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception/bin'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception/lib/pkgconfig/litter_bot_perception.pc'
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages'
+[1.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_perception', 'pythonpath')
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/pythonpath.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/pythonpath.dsv'
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/hook/pythonpath.sh'
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_perception/bin'
+[1.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot_perception)
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/package.ps1'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/package.dsv'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/package.sh'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/package.bash'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_perception/share/litter_bot_perception/package.zsh'
+[1.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot_perception/share/colcon-core/packages/litter_bot_perception)
+[1.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_navigation', 'pythonpath_develop')
+[1.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath_develop.ps1'
+[1.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_navigation' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_navigation/build --no-deps symlink_data
+[1.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/build/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath_develop.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath_develop.sh'
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation' for CMake module files
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation' for CMake config files
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation/lib'
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation/bin'
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation/lib/pkgconfig/litter_bot_navigation.pc'
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages'
+[1.467s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_navigation', 'pythonpath')
+[1.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath.ps1'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/hook/pythonpath.sh'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_navigation/bin'
+[1.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot_navigation)
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/package.ps1'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/package.dsv'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/package.sh'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/package.bash'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/package.zsh'
+[1.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot_navigation/share/colcon-core/packages/litter_bot_navigation)
+[1.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot', 'pythonpath_develop')
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot/share/litter_bot/hook/pythonpath_develop.ps1'
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/build/litter_bot/share/litter_bot/hook/pythonpath_develop.dsv'
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot/build --no-deps symlink_data
+[1.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/build/litter_bot/share/litter_bot/hook/pythonpath_develop.sh'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot' for CMake module files
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot' for CMake config files
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot/lib'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot/bin'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot/lib/pkgconfig/litter_bot.pc'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages'
+[1.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot', 'pythonpath')
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/pythonpath.ps1'
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/pythonpath.dsv'
+[1.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot/share/litter_bot/hook/pythonpath.sh'
+[1.474s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot/bin'
+[1.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot)
+[1.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot/share/litter_bot/package.ps1'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot/share/litter_bot/package.dsv'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot/share/litter_bot/package.sh'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot/share/litter_bot/package.bash'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot/share/litter_bot/package.zsh'
+[1.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot/share/colcon-core/packages/litter_bot)
+[1.476s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hydria/ws/src/litter_bot_bringup' with build type 'ament_cmake'
+[1.476s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hydria/ws/src/litter_bot_bringup'
+[1.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.477s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_bringup': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hydria/ws/src/litter_bot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_bringup
+[2.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/hydria/ws/src/litter_bot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_bringup
+[2.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_bringup': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_bringup -- -j6 -l6
+[2.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_bringup -- -j6 -l6
+[2.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hydria/ws/build/litter_bot_bringup': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_bringup
+[2.667s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot_bringup)
+[2.668s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup' for CMake module files
+[2.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hydria/ws/build/litter_bot_bringup' returned '0': AMENT_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_perception:/home/hydria/ws/install/litter_bot_navigation:/home/hydria/ws/install/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_description:/home/hydria/ws/install/litter_bot:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hydria/ws/install/litter_bot_gazebo:/home/hydria/ws/install/litter_bot_description:/opt/ros/humble PYTHONPATH=/home/hydria/ws/build/litter_bot_perception:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_navigation:/home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot_manipulation:/home/hydria/ws/install/litter_bot_manipulation/lib/python3.10/site-packages:/home/hydria/ws/build/litter_bot:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_bringup
+[2.668s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup' for CMake config files
+[2.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_bringup', 'cmake_prefix_path')
+[2.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.ps1'
+[2.669s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.dsv'
+[2.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.sh'
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/bin'
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/lib/pkgconfig/litter_bot_bringup.pc'
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/lib/python3.10/site-packages'
+[2.670s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/bin'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.ps1'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.dsv'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.sh'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.bash'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.zsh'
+[2.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot_bringup/share/colcon-core/packages/litter_bot_bringup)
+[2.671s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(litter_bot_bringup)
+[2.671s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup' for CMake module files
+[2.671s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup' for CMake config files
+[2.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('litter_bot_bringup', 'cmake_prefix_path')
+[2.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.ps1'
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.dsv'
+[2.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/hook/cmake_prefix_path.sh'
+[2.672s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/bin'
+[2.672s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/lib/pkgconfig/litter_bot_bringup.pc'
+[2.672s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/lib/python3.10/site-packages'
+[2.672s] Level 1:colcon.colcon_core.environment:checking '/home/hydria/ws/install/litter_bot_bringup/bin'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.ps1'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.dsv'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.sh'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.bash'
+[2.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/hydria/ws/install/litter_bot_bringup/share/litter_bot_bringup/package.zsh'
+[2.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hydria/ws/install/litter_bot_bringup/share/colcon-core/packages/litter_bot_bringup)
+[2.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.675s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.700s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.703s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[2.703s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.703s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hydria/ws/install/local_setup.ps1'
+[2.704s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hydria/ws/install/_local_setup_util_ps1.py'
+[2.705s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hydria/ws/install/setup.ps1'
+[2.705s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hydria/ws/install/local_setup.sh'
+[2.706s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hydria/ws/install/_local_setup_util_sh.py'
+[2.706s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hydria/ws/install/setup.sh'
+[2.706s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hydria/ws/install/local_setup.bash'
+[2.707s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hydria/ws/install/setup.bash'
+[2.707s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hydria/ws/install/local_setup.zsh'
+[2.707s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hydria/ws/install/setup.zsh'

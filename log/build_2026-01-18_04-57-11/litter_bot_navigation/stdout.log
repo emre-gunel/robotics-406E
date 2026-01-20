@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing litter_bot_navigation.egg-info/PKG-INFO
+writing dependency_links to litter_bot_navigation.egg-info/dependency_links.txt
+writing entry points to litter_bot_navigation.egg-info/entry_points.txt
+writing requirements to litter_bot_navigation.egg-info/requires.txt
+writing top-level names to litter_bot_navigation.egg-info/top_level.txt
+reading manifest file 'litter_bot_navigation.egg-info/SOURCES.txt'
+writing manifest file 'litter_bot_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/hydria/ws/install/litter_bot_navigation/lib/python3.10/site-packages/litter-bot-navigation.egg-link (link to .)
+Installing coverage_planner_node script to /home/hydria/ws/install/litter_bot_navigation/lib/litter_bot_navigation
+
+Installed /home/hydria/ws/build/litter_bot_navigation
+running symlink_data
+symbolically linking /home/hydria/ws/build/litter_bot_navigation/maps/generate_map.py -> /home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/maps
+symbolically linking /home/hydria/ws/build/litter_bot_navigation/maps/med_cim_map.pgm -> /home/hydria/ws/install/litter_bot_navigation/share/litter_bot_navigation/maps

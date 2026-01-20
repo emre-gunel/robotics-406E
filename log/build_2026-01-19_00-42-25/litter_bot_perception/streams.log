@@ -1,0 +1,19 @@
+[0.880s] Invoking command in '/home/hydria/ws/build/litter_bot_perception': PYTHONPATH=/home/hydria/ws/build/litter_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_perception/build --no-deps symlink_data
+[1.386s] running develop
+[1.618s] running egg_info
+[1.619s] writing litter_bot_perception.egg-info/PKG-INFO
+[1.620s] writing dependency_links to litter_bot_perception.egg-info/dependency_links.txt
+[1.621s] writing entry points to litter_bot_perception.egg-info/entry_points.txt
+[1.621s] writing requirements to litter_bot_perception.egg-info/requires.txt
+[1.621s] writing top-level names to litter_bot_perception.egg-info/top_level.txt
+[1.624s] reading manifest file 'litter_bot_perception.egg-info/SOURCES.txt'
+[1.624s] writing manifest file 'litter_bot_perception.egg-info/SOURCES.txt'
+[1.627s] running build_ext
+[1.627s] Creating /home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages/litter-bot-perception.egg-link (link to .)
+[1.628s] Installing detection_node script to /home/hydria/ws/install/litter_bot_perception/lib/litter_bot_perception
+[1.629s] Installing litter_localizer_node script to /home/hydria/ws/install/litter_bot_perception/lib/litter_bot_perception
+[1.637s] Installing simple_localizer_node script to /home/hydria/ws/install/litter_bot_perception/lib/litter_bot_perception
+[1.638s] 
+[1.638s] Installed /home/hydria/ws/build/litter_bot_perception
+[1.638s] running symlink_data
+[1.690s] Invoked command in '/home/hydria/ws/build/litter_bot_perception' returned '0': PYTHONPATH=/home/hydria/ws/build/litter_bot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/hydria/ws/build/litter_bot_perception/build --no-deps symlink_data

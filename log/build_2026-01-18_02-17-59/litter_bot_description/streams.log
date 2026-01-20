@@ -1,0 +1,44 @@
+[0.010s] Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hydria/ws/src/litter_bot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_description
+[0.177s] -- The C compiler identification is GNU 11.4.0
+[0.478s] -- The CXX compiler identification is GNU 11.4.0
+[0.685s] -- Detecting C compiler ABI info
+[0.777s] -- Detecting C compiler ABI info - done
+[0.781s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.782s] -- Detecting C compile features
+[0.782s] -- Detecting C compile features - done
+[0.785s] -- Detecting CXX compiler ABI info
+[0.859s] -- Detecting CXX compiler ABI info - done
+[0.863s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.863s] -- Detecting CXX compile features
+[0.863s] -- Detecting CXX compile features - done
+[0.874s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.957s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.998s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.064s] -- Configuring done
+[1.066s] -- Generating done
+[1.067s] -- Build files have been written to: /home/hydria/ws/build/litter_bot_description
+[1.070s] Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hydria/ws/src/litter_bot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hydria/ws/install/litter_bot_description
+[1.070s] Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_description -- -j6 -l6
+[1.086s] Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hydria/ws/build/litter_bot_description -- -j6 -l6
+[1.091s] Invoking command in '/home/hydria/ws/build/litter_bot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_description
+[1.094s] -- Install configuration: ""
+[1.094s] -- Execute custom install script
+[1.095s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/urdf/robot.urdf.xacro
+[1.100s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/launch/display.launch.py
+[1.104s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/rviz/display.rviz
+[1.107s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/ament_index/resource_index/package_run_dependencies/litter_bot_description
+[1.111s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/ament_index/resource_index/parent_prefix_path/litter_bot_description
+[1.115s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/environment/ament_prefix_path.sh
+[1.119s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/environment/ament_prefix_path.dsv
+[1.123s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/environment/path.sh
+[1.126s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/environment/path.dsv
+[1.130s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/local_setup.bash
+[1.134s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/local_setup.sh
+[1.138s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/local_setup.zsh
+[1.141s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/local_setup.dsv
+[1.145s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/package.dsv
+[1.149s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/ament_index/resource_index/packages/litter_bot_description
+[1.153s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/cmake/litter_bot_descriptionConfig.cmake
+[1.156s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/cmake/litter_bot_descriptionConfig-version.cmake
+[1.160s] -- Symlinking: /home/hydria/ws/install/litter_bot_description/share/litter_bot_description/package.xml
+[1.164s] Invoked command in '/home/hydria/ws/build/litter_bot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hydria/ws/build/litter_bot_description

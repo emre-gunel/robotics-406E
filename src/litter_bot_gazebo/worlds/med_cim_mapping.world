@@ -1,0 +1,382 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="med_cim_mapping">
+    <!-- Physics -->
+    <physics type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Lighting -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground plane with grass texture -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 10</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 10</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.2 0.5 0.2 1</ambient>
+            <diffuse>0.3 0.6 0.3 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Boundary walls -->
+    <model name="wall_north">
+      <static>true</static>
+      <pose>0 5.1 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>0 -5.1 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>20 0.2 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>10.1 0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>-10.1 0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.2 10 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Bench -->
+    <model name="bench_1">
+      <static>true</static>
+      <pose>7.0 0 0.25 0 0 1.57</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.5 0.3 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Trees -->
+    <model name="tree_1">
+      <static>true</static>
+      <pose>-8.0 4.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.15</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.15</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.35 0.2 0.1 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.0</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.1 1</ambient>
+            <diffuse>0.2 0.5 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_2">
+      <static>true</static>
+      <pose>-5.0 -3.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.18</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.18</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.35 0.2 0.1 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.2</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.45 0.1 1</ambient>
+            <diffuse>0.2 0.55 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_3">
+      <static>true</static>
+      <pose>3.0 3.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.12</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.12</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.3 0.18 0.08 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.3 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>0.9</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.15 0.5 0.15 1</ambient>
+            <diffuse>0.25 0.6 0.25 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_4">
+      <static>true</static>
+      <pose>8.0 -3.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.2</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.4 0.22 0.12 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.6 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.3</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.08 0.38 0.08 1</ambient>
+            <diffuse>0.18 0.48 0.18 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_5">
+      <static>true</static>
+      <pose>-2.0 2.0 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.14</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.14</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.32 0.19 0.09 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.4 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.0</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.12 0.42 0.12 1</ambient>
+            <diffuse>0.22 0.52 0.22 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="tree_6">
+      <static>true</static>
+      <pose>5.5 1.5 0 0 0 0</pose>
+      <link name="trunk">
+        <pose>0 0 1.0 0 0 0</pose>
+        <collision name="collision">
+          <geometry>
+            <cylinder><radius>0.16</radius><length>2.0</length></cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <cylinder><radius>0.16</radius><length>2.0</length></cylinder>
+          </geometry>
+          <material>
+            <ambient>0.38 0.21 0.11 1</ambient>
+          </material>
+        </visual>
+      </link>
+      <link name="foliage">
+        <pose>0 0 2.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <sphere><radius>1.1</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>0.1 0.4 0.1 1</ambient>
+            <diffuse>0.2 0.5 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Second bench -->
+    <model name="bench_2">
+      <static>true</static>
+      <pose>-6.0 -1.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1.5 0.5 0.5</size></box>
+          </geometry>
+          <material>
+            <ambient>0.4 0.25 0.1 1</ambient>
+            <diffuse>0.5 0.3 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- NO HUMANS - This is for mapping only -->
+    <!-- NO LITTER - Litter will be detected dynamically -->
+
+  </world>
+</sdf>
+
