@@ -2,7 +2,8 @@
 ## ROS 2-Based Litter Collection System with Gazebo Simulation
 
 ---
-
+**Name:** Emre Günel 
+**Number:** 150230725
 **Project Name:** Autonomous Litter Collection Robot (Litter Bot)  
 **Platform:** ROS 2 Humble  
 **Simulation:** Gazebo Classic  
