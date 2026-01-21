@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000155] (-) JobUnselected: {'identifier': 'litter_bot_bringup'}
+[0.000201] (-) JobUnselected: {'identifier': 'litter_bot_description'}
+[0.000223] (-) JobUnselected: {'identifier': 'litter_bot_gazebo'}
+[0.000240] (-) JobUnselected: {'identifier': 'litter_bot_manipulation'}
+[0.000256] (-) JobUnselected: {'identifier': 'litter_bot_navigation'}
+[0.000273] (-) JobUnselected: {'identifier': 'litter_bot_perception'}
+[0.000296] (litter_bot) JobQueued: {'identifier': 'litter_bot', 'dependencies': OrderedDict()}
+[0.000318] (litter_bot) JobStarted: {'identifier': 'litter_bot'}
+[0.093851] (-) TimerEvent: {}
+[0.194179] (-) TimerEvent: {}
+[0.294479] (-) TimerEvent: {}
+[0.394933] (-) TimerEvent: {}
+[0.495374] (-) TimerEvent: {}
+[0.595791] (-) TimerEvent: {}
+[0.696026] (-) TimerEvent: {}
+[0.796361] (-) TimerEvent: {}
+[0.805948] (litter_bot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/hydria/ws/build/litter_bot/build', '--no-deps', 'symlink_data'], 'cwd': '/home/hydria/ws/build/litter_bot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/mnt/c/Program Files/cursor', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'hydria', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/hydria/.cursor-server/bin/32cfbe848b35d9eb320980195985450f244b3030/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/hydria', 'OLDPWD': '/home/hydria/ws', 'VSCODE_IPC_HOOK_CLI': '/mnt/wslg/runtime-dir/vscode-ipc-cb300f24-93a9-44bd-a448-cbeb9bb68ad7.sock', 'ROS_PYTHON_VERSION': '3', 'NO_COLOR': '1', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'ROS_DISTRO': 'humble', 'LOGNAME': 'hydria', 'FORCE_COLOR': '0', 'NAME': 'DESKTOP-N8VDEIP', 'WSL_INTEROP': '/run/WSL/9_interop', 'VSCODE_HANDLES_SIGPIPE': 'true', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'dumb', 'EVERYSPHERE_RIPGREP_PATH': '/home/hydria/.cursor-server/bin/32cfbe848b35d9eb320980195985450f244b3030/node_modules/@vscode/ripgrep/bin/rg', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:/usr/share/gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/usr/share/gazebo-11/models:/usr/share/gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:', 'ROS_LOCALHOST_ONLY': '0', 'COMPOSER_NO_INTERACTION': '1', 'PATH': '/home/hydria/.local/bin:/home/hydria/.cursor-server/bin/32cfbe848b35d9eb320980195985450f244b3030/bin/remote-cli:/home/hydria/.local/bin:/opt/ros/humble/bin:/home/hydria/.cursor-server/bin/32cfbe848b35d9eb320980195985450f244b3030/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/wamp64/bin/mysql/mysql9.1.0/bin:/mnt/c/Program Files/cursor/resources/app/bin:/mnt/c/Users/Emre/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/Emre/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/Emre/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2024.1.4/bin:/mnt/c/Users/Emre/Microsoft VS Code/bin:/mnt/c/msys64/ucrt64/bin:/mnt/c/Users/Emre/.dotnet/tools:/mnt/c/tools/neovim/nvim-win64/bin:/mnt/c/Program Files/Inkscape/bin:/mnt/c/Program Files/JetBrains/DataGrip 2025.2.4/bin:/mnt/c/Program Files/PsychoPy:/mnt/c/Program Files/PsychoPy/DLLs:/mnt/c/Program 豆ムעٸkָk:/mnt/c/Users/Emre/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/Emre/AppData/Local/GitHubDesktop/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'CURSOR_AGENT': '1', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/hydria/ws/build/litter_bot', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/hydria/ws/build/litter_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hydria/ws/install/litter_bot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', '_ZO_DOCTOR': '0', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.896504] (-) TimerEvent: {}
+[0.996784] (-) TimerEvent: {}
+[1.097154] (-) TimerEvent: {}
+[1.123943] (litter_bot) StdoutLine: {'line': b'running develop\n'}
+[1.197274] (-) TimerEvent: {}
+[1.297541] (-) TimerEvent: {}
+[1.317392] (litter_bot) StdoutLine: {'line': b'running egg_info\n'}
+[1.318651] (litter_bot) StdoutLine: {'line': b'writing litter_bot.egg-info/PKG-INFO\n'}
+[1.318872] (litter_bot) StdoutLine: {'line': b'writing dependency_links to litter_bot.egg-info/dependency_links.txt\n'}
+[1.318942] (litter_bot) StdoutLine: {'line': b'writing entry points to litter_bot.egg-info/entry_points.txt\n'}
+[1.318996] (litter_bot) StdoutLine: {'line': b'writing requirements to litter_bot.egg-info/requires.txt\n'}
+[1.319047] (litter_bot) StdoutLine: {'line': b'writing top-level names to litter_bot.egg-info/top_level.txt\n'}
+[1.320876] (litter_bot) StdoutLine: {'line': b"reading manifest file 'litter_bot.egg-info/SOURCES.txt'\n"}
+[1.321754] (litter_bot) StdoutLine: {'line': b"writing manifest file 'litter_bot.egg-info/SOURCES.txt'\n"}
+[1.323794] (litter_bot) StdoutLine: {'line': b'running build_ext\n'}
+[1.324130] (litter_bot) StdoutLine: {'line': b'Creating /home/hydria/ws/install/litter_bot/lib/python3.10/site-packages/litter-bot.egg-link (link to .)\n'}
+[1.324993] (litter_bot) StdoutLine: {'line': b'Installing coordinator_node script to /home/hydria/ws/install/litter_bot/lib/litter_bot\n'}
+[1.325404] (litter_bot) StdoutLine: {'line': b'Installing goal_sender script to /home/hydria/ws/install/litter_bot/lib/litter_bot\n'}
+[1.325536] (litter_bot) StdoutLine: {'line': b'Installing litter_manager_node script to /home/hydria/ws/install/litter_bot/lib/litter_bot\n'}
+[1.327719] (litter_bot) StdoutLine: {'line': b'\n'}
+[1.328002] (litter_bot) StdoutLine: {'line': b'Installed /home/hydria/ws/build/litter_bot\n'}
+[1.328071] (litter_bot) StdoutLine: {'line': b'running symlink_data\n'}
+[1.372974] (litter_bot) CommandEnded: {'returncode': 0}
+[1.391509] (litter_bot) JobEnded: {'identifier': 'litter_bot', 'rc': 0}
+[1.392774] (-) EventReactorShutdown: {}

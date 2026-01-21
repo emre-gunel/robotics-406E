@@ -1,16 +1,23 @@
-# Litter Bot - Autonomous Grass Cleaning Robot
+# Litter Bot - Autonomous Litter Collection Robot
 
 ITU Campus (Med Çim) için otonom çöp toplama robotu simülasyonu.
+
+**🎯 Proje Özeti:** Robot devriye gezerken çöp tespit eder, yaklaşır ve toplar (mesafe ≤ 0.3m).
+
+**📊 Detaylı Raporlar:**
+- **Türkçe:** [PROJE_RAPORU.md](PROJE_RAPORU.md)
+- **English:** [PROJECT_REPORT.md](PROJECT_REPORT.md)
 
 ## Sistem Bileşenleri
 
 | Bileşen | Açıklama |
 |---------|----------|
-| **TurtleBot3 Waffle** | Mobil platform |
-| **Gazebo** | Simülasyon ortamı |
-| **Nav2** | Navigation stack |
-| **SLAM Toolbox** | Harita oluşturma |
+| **TurtleBot3 Waffle** | Mobil platform (RGB-D kamera + LiDAR) |
+| **Gazebo** | Simülasyon ortamı (30 litter ile arena - 5×6 grid) |
+| **Nav2** | Navigation stack (AMCL + DWB controller) |
 | **Coverage Planner** | S-pattern alan tarama |
+| **Depth Detection** | RGB kamera ile çöp tespiti |
+| **Litter Manager** ⭐ | Mesafe kontrolü ve Gazebo entegrasyonu |
 | **Coordinator** | State machine - görev yönetimi |
 
 ## Kurulum

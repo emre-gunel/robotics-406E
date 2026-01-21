@@ -1,7 +1,4 @@
 [console_scripts]
-color_detection_node = litter_bot_perception.color_detection_node:main
 depth_detection_node = litter_bot_perception.depth_detection_node:main
-detection_node = litter_bot_perception.detection_node:main
 litter_localizer_node = litter_bot_perception.litter_localizer_node:main
-simple_localizer_node = litter_bot_perception.simple_localizer_node:main
 

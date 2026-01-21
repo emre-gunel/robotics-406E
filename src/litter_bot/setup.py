@@ -24,8 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'goal_sender = litter_bot.goal_sender:main',
             'coordinator_node = litter_bot.coordinator_node:main',
+            'litter_manager_node = litter_bot.litter_manager_node:main',
         ],
     },
 )

@@ -23,10 +23,7 @@ setup(
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
-            'detection_node = litter_bot_perception.detection_node:main',
             'litter_localizer_node = litter_bot_perception.litter_localizer_node:main',
-            'simple_localizer_node = litter_bot_perception.simple_localizer_node:main',
-            'color_detection_node = litter_bot_perception.color_detection_node:main',
             'depth_detection_node = litter_bot_perception.depth_detection_node:main',
         ],
     },

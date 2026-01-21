@@ -113,7 +113,24 @@ def generate_launch_description():
             ]
         ),
 
-        # 6. Coordinator - wait for all subsystems
+        # 6. Litter Manager - simulates collection by deleting litter from Gazebo
+        TimerAction(
+            period=12.0,
+            actions=[
+                Node(
+                    package='litter_bot',
+                    executable='litter_manager_node',
+                    name='litter_manager_node',
+                    output='screen',
+                    parameters=[{
+                        'use_sim_time': True,
+                        'collection_distance': 0.3,  # meters
+                    }]
+                ),
+            ]
+        ),
+
+        # 7. Coordinator - wait for all subsystems
         TimerAction(
             period=35.0,
             actions=[

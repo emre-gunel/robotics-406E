@@ -605,85 +605,17 @@
       </link>
     </model>
 
-    <!-- ========== LITTER OBJECTS ========== -->
+    <!-- ========== LITTER OBJECTS (30 BOTTLE CAPS - UNIFORM) ========== -->
+    <!-- Grid: 5 rows x 6 columns, evenly distributed -->
+    <!-- Coverage area: x=[0.5, 6.5], y=[-2.0, 2.0] -->
     
-    <!-- Red Bottle Cap 1 -->
-    <model name="bottle_cap_1">
+    <!-- Row 1 (y = -1.6) -->
+    <model name="litter_01">
       <static>true</static>
-      <pose>2.0 -0.5 0.02 0 0 0</pose>
+      <pose>1.0 -1.6 0.02 0 0 0</pose>
       <link name="link">
         <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
-          </geometry>
-          <material>
-            <ambient>0.8 0.0 0.0 1</ambient>
-            <diffuse>1.0 0.0 0.0 1</diffuse>
-            <specular>0.5 0.0 0.0 1</specular>
-          </material>
-        </visual>
-        <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
-          </geometry>
-        </collision>
-      </link>
-    </model>
-
-    <!-- Red Bottle Cap 2 -->
-    <model name="bottle_cap_2">
-      <static>true</static>
-      <pose>3.5 0.5 0.02 0 0 0</pose>
-      <link name="link">
-        <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
-          </geometry>
-          <material>
-            <ambient>0.9 0.1 0.0 1</ambient>
-            <diffuse>1.0 0.1 0.0 1</diffuse>
-            <specular>0.5 0.0 0.0 1</specular>
-          </material>
-        </visual>
-        <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.02</length></cylinder>
-          </geometry>
-        </collision>
-      </link>
-    </model>
-
-    <!-- Red Bottle Cap 3 -->
-    <model name="bottle_cap_3">
-      <static>true</static>
-      <pose>1.0 -1.5 0.02 0 0 0</pose>
-      <link name="link">
-        <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.02</length></cylinder>
-          </geometry>
-          <material>
-            <ambient>0.7 0.0 0.0 1</ambient>
-            <diffuse>0.9 0.0 0.0 1</diffuse>
-          </material>
-        </visual>
-        <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.02</length></cylinder>
-          </geometry>
-        </collision>
-      </link>
-    </model>
-
-    <!-- Red Litter 4 (was cigarette) -->
-    <model name="litter_4">
-      <static>true</static>
-      <pose>2.5 1.0 0.02 0 0 0</pose>
-      <link name="link">
-        <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.03</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
           <material>
             <ambient>0.9 0.0 0.0 1</ambient>
             <diffuse>1.0 0.0 0.0 1</diffuse>
@@ -691,61 +623,536 @@
           </material>
         </visual>
         <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.03</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
         </collision>
       </link>
     </model>
 
-    <!-- Red Litter 5 -->
-    <model name="litter_5">
+    <model name="litter_02">
       <static>true</static>
-      <pose>4.0 -1.0 0.02 0 0 0</pose>
+      <pose>2.0 -1.6 0.02 0 0 0</pose>
       <link name="link">
         <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.03</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
           <material>
-            <ambient>0.85 0.0 0.0 1</ambient>
-            <diffuse>1.0 0.1 0.0 1</diffuse>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
             <specular>0.5 0.0 0.0 1</specular>
           </material>
         </visual>
         <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.03</radius><length>0.03</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
         </collision>
       </link>
     </model>
 
-    <!-- Red Litter 6 -->
-    <model name="litter_6">
+    <model name="litter_03">
       <static>true</static>
-      <pose>0.5 0.5 0.02 0 0 0</pose>
+      <pose>3.0 -1.6 0.02 0 0 0</pose>
       <link name="link">
         <visual name="visual">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.025</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
           <material>
-            <ambient>0.95 0.0 0.0 1</ambient>
+            <ambient>0.9 0.0 0.0 1</ambient>
             <diffuse>1.0 0.0 0.0 1</diffuse>
-            <specular>0.6 0.0 0.0 1</specular>
+            <specular>0.5 0.0 0.0 1</specular>
           </material>
         </visual>
         <collision name="collision">
-          <geometry>
-            <cylinder><radius>0.025</radius><length>0.025</length></cylinder>
-          </geometry>
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
         </collision>
       </link>
     </model>
 
-    <!-- Large Red Object (easier to see) -->
-    <!-- red_can removed - all litter is now bottle cap sized -->
+    <model name="litter_04">
+      <static>true</static>
+      <pose>4.0 -1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_05">
+      <static>true</static>
+      <pose>5.0 -1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_06">
+      <static>true</static>
+      <pose>6.0 -1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Row 2 (y = -0.8) -->
+    <model name="litter_07">
+      <static>true</static>
+      <pose>1.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_08">
+      <static>true</static>
+      <pose>2.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_09">
+      <static>true</static>
+      <pose>3.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_10">
+      <static>true</static>
+      <pose>4.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_11">
+      <static>true</static>
+      <pose>5.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_12">
+      <static>true</static>
+      <pose>6.0 -0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Row 3 (y = 0.0) -->
+    <model name="litter_13">
+      <static>true</static>
+      <pose>1.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_14">
+      <static>true</static>
+      <pose>2.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_15">
+      <static>true</static>
+      <pose>3.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_16">
+      <static>true</static>
+      <pose>4.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_17">
+      <static>true</static>
+      <pose>5.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_18">
+      <static>true</static>
+      <pose>6.0 0.0 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Row 4 (y = 0.8) -->
+    <model name="litter_19">
+      <static>true</static>
+      <pose>1.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_20">
+      <static>true</static>
+      <pose>2.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_21">
+      <static>true</static>
+      <pose>3.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_22">
+      <static>true</static>
+      <pose>4.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_23">
+      <static>true</static>
+      <pose>5.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_24">
+      <static>true</static>
+      <pose>6.0 0.8 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Row 5 (y = 1.6) -->
+    <model name="litter_25">
+      <static>true</static>
+      <pose>1.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_26">
+      <static>true</static>
+      <pose>2.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_27">
+      <static>true</static>
+      <pose>3.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_28">
+      <static>true</static>
+      <pose>4.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_29">
+      <static>true</static>
+      <pose>5.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="litter_30">
+      <static>true</static>
+      <pose>6.0 1.6 0.02 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+          <material>
+            <ambient>0.9 0.0 0.0 1</ambient>
+            <diffuse>1.0 0.0 0.0 1</diffuse>
+            <specular>0.5 0.0 0.0 1</specular>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><cylinder><radius>0.03</radius><length>0.02</length></cylinder></geometry>
+        </collision>
+      </link>
+    </model>
 
   </world>
 </sdf>

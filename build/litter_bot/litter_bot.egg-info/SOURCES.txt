@@ -3,7 +3,7 @@ setup.cfg
 setup.py
 litter_bot/__init__.py
 litter_bot/coordinator_node.py
-litter_bot/goal_sender.py
+litter_bot/litter_manager_node.py
 litter_bot.egg-info/PKG-INFO
 litter_bot.egg-info/SOURCES.txt
 litter_bot.egg-info/dependency_links.txt

@@ -3,11 +3,8 @@ setup.cfg
 setup.py
 launch/perception.launch.py
 litter_bot_perception/__init__.py
-litter_bot_perception/color_detection_node.py
 litter_bot_perception/depth_detection_node.py
-litter_bot_perception/detection_node.py
 litter_bot_perception/litter_localizer_node.py
-litter_bot_perception/simple_localizer_node.py
 litter_bot_perception.egg-info/PKG-INFO
 litter_bot_perception.egg-info/SOURCES.txt
 litter_bot_perception.egg-info/dependency_links.txt
